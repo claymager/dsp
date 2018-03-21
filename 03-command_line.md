@@ -1,4 +1,5 @@
-# Learn command line
+Learn command line
+==================
 
 Please follow and complete the free online [Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/) or [Codecademy's Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line). These are helpful tutorials. You should be able to go through these in a couple of hours.
 
@@ -20,7 +21,20 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Command|Description
+------:|-----
+`pwd  `|prints working directory
+`mkdir`|makes a directory
+`rmdir`|removes an empty directory
+`touch`|updates the modification date of a file, creating it if necessary
+`rm   `|removes a file
+`mv   `|moves (renames) a file
+`la   `|lists all files
+`cp   `|copies files
+`sed  `|edits text stream
+`grep `|finds in stream
+
+
 
 ---
 
@@ -35,7 +49,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > grabs files
+-a  all: does not ignore files starting with '.'
+-l  long:incudes more details (permissions, etc)
+-h  humun readable: reformats displayed filesize
+-t  time: sorts items by most recent 
+-Glp -l without group intormation that is more readable without terminal colors.
+
+
 
 ---
 
@@ -43,7 +64,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+`ls -o` identical to `ls -Gl`
+`ls -A` like `ls -a` without ./. and ./..
+`ls -R` recursive
+`ls -L` follows symbolic links
+`ls -d` do not open directories
+
 
 ---
 
@@ -51,7 +78,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `xargs` allows lifting stdin to the command level.
+`find -name '*.jpg' | xargs rm` should remove all \*.jpg in subfolders, if I understand it correctly.
 
  
 

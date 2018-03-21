@@ -62,7 +62,7 @@ In a markdown file on GitHub, to see how it was formatted, click on "raw" on upp
 
 Code for line separators:  
 
-```
+
 Rule #1 
 ---
 Rule #2
